@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-pink-50;
+  }
+
+  #home {
+    background-image: url("./assets/Header.jpg");
+  }
+
+  #intro {
+    background-image: url("./assets/peachwave.png");
+  }
+
+  #advocation {
+    background-image: url("./assets/bluewave.png");
+  }
+
+  .btn {
+    @apply px-5;
+    @apply py-4;
+    @apply rounded-[30px];
+    @apply text-lg;
+    @apply font-medium;
+    @apply transition-colors;
+    @apply outline-none;
+  }
+
+  .btn-primary {
+    @apply text-darkgreen;
+    @apply border-darkgreen;
+    @apply border-2;
+    @apply hover:bg-darkgreen;
+    @apply hover:text-pink-50;
+    @apply focus:bg-darkgreen;
+    @apply focus:text-pink-50;
+  }
+
+  .btn-secondary {
+    @apply text-pink-50;
+    @apply border-pink-50;
+    @apply border-2;
+    @apply hover:bg-pink-50;
+    @apply hover:text-darkgreen;
+    @apply focus:bg-purple-50;
+    @apply focus:text-darkgreen;
+  }
+}
